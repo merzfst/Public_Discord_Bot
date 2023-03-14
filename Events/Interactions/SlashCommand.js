@@ -17,11 +17,12 @@ module.exports = {
         ephemeral: true,
       });
 
-    if (command.developer && !conf.Developers.includes(interaction.user.id))
+    if (command.developer && !conf.Developers.includes(interaction.user.id)) {
       return interaction.reply({
         content: "Эта команда доступна только для разработчика.",
         ephemeral: true,
       });
+    }
 
     const subCommand = interaction.options.getSubcommand(false);
     if (subCommand) {

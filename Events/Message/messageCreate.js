@@ -128,7 +128,10 @@ module.exports = {
           .setTitle(`**${member1}** *поцеловал(а)* **${member2}**`)
           .setImage(json.data[randomIndex].images.original.url)
           .setColor(randomColor)
-          .setTimestamp();
+          .setFooter({
+            text: "Powered By Giphy.com",
+            url: "https://i.imgur.com/kXy7KSf.png",
+          });
 
         message.channel.send({
           embeds: [embed],
