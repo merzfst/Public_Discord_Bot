@@ -130,7 +130,7 @@ module.exports = {
           .setColor(randomColor)
           .setFooter({
             text: "Powered By Giphy.com",
-            url: "https://i.imgur.com/kXy7KSf.png",
+            iconURL: "https://i.imgur.com/kXy7KSf.png",
           });
 
         message.channel.send({
