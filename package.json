@@ -1,0 +1,23 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^1.1.0",
+    "ascii-table": "^0.0.9",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "glob": "^9.2.1",
+    "mongoose": "^6.6.0",
+    "node-fetch": "^2.6.9",
+    "node-vk-sdk": "^1.1.7",
+    "openai": "^3.2.1"
+  },
+  "description": ""
+}
