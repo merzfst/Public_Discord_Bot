@@ -1,7 +1,8 @@
 # Public_Discord_Bot
-Publit discord bot on node.js
-Данный бот создавался как развлечение.
-Его функции:
-1. Загрузка файлов, а также перезагрузка событий и команд, что даёт возможность не выключать бота, если в нём что-то изменить на "неглобальном" уровне.
-2. Использование слэш комманд
-3. Использование префиксных комманд, по типу a!kiss и т.д. Префикс можно изменять.
+This bot was created as entertainment.
+Its functions:
+1. Downloading files, as well as reloading events and commands, which makes it possible not to turn off the bot if something is changed in it at a "non-global" level.
+2. Using slash commands.
+3. Using prefix commands, by type a!kiss, etc. The prefix can be changed.
+
+The main discord bot:https://discord.com/api/oauth2/authorize?client_id=1018544864914313357&permissions=2189224835904&scope=bot
