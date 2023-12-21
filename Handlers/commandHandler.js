@@ -8,7 +8,7 @@ async function loadCommands(client) {
   let commandsArray = [];
   const ncommand = new Array();
 
-  const commandFiles = await loadFiles("Commands"); // загрузка команд из папки Commands
+  const commandFiles = await loadFiles("Commands");
 
   for (const file of commandFiles) {
     try {
@@ -16,23 +16,23 @@ async function loadCommands(client) {
       if (command.subCommand) {
         try {
           client.subCommands.set(command.subCommand, command);
-          ncommand.push({ SubCommand: command.subCommand, Status: "😊" });
+          ncommand.push({ SubCommand: command.subCommand, Status: "💚" });
         } catch (error) {
           ncommand.push({
             SubCommand: file.split("/").pop().slice(0, -3),
-            Status: "😥",
+            Status: "⚠",
           });
         }
       }
       client.commands.set(command.data.name, command);
       commandsArray.push(command.data.toJSON());
-      ncommand.push({ Command: command.data.name, Status: "😊" });
+      ncommand.push({ Command: command.data.name, Status: "💚" });
       var sc = command.subCommand;
     } catch (error) {
       if (sc) {
         ncommand.push({
           Command: file.split("/").pop().slice(0, -3),
-          Status: "😥",
+          Status: "⚠",
         });
       }
     }

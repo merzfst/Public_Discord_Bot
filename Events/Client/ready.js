@@ -9,7 +9,7 @@ module.exports = {
     client.user.setActivity({
       name: "Название_Стрима",
       type: ActivityType.Streaming,
-      url: "", // любая ссылка с ютуба, либо с твитча
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=0s", //😀
     });
 
     loadCommands(client);
